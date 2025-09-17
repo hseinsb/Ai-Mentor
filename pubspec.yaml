@@ -1,0 +1,96 @@
+name: ai_mentor
+description: "AI-powered relationship mentor app for singles"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+  flutter: ">=3.13.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Navigation
+  cupertino_icons: ^1.0.6
+  go_router: ^12.1.3
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Firebase & Backend
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  firebase_storage: ^11.5.6
+  firebase_messaging: ^14.7.10
+  cloud_functions: ^4.6.6
+  firebase_analytics: ^10.7.4
+  
+  # Authentication
+  google_sign_in: ^6.1.6
+  sign_in_with_apple: ^5.0.0
+  
+  # State Management & Utils
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  shared_preferences: ^2.2.2
+  
+  # UI Components & Charts
+  fl_chart: ^0.65.0
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  
+  # Notifications & Background
+  flutter_local_notifications: ^16.3.0
+  workmanager: ^0.5.2
+  
+  # Subscription & Payments
+  purchases_flutter: ^6.20.1
+  
+  # Text-to-Speech
+  flutter_tts: ^3.8.5
+  
+  # PDF & Documents
+  pdf: ^3.10.7
+  path_provider: ^2.1.1
+  
+  # HTTP & Network
+  dio: ^5.4.0
+  connectivity_plus: ^5.0.2
+  
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.2.1
+  crypto: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  
+  # Code Generation
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.7
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
